@@ -2,20 +2,20 @@
 The official development profile for Craftree — a voxel game by Luan Labs.
 <div align="center">
 
-<img src="assets/craftree.png" width="150" alt="Craftree">
+<img src="./craftree.png" width="150" alt="Craftree">
 
-# CRAFTREE
+# 🌳 CRAFTREE
 
-### A voxel game project by Luan Labs
+### A voxel game powered by the Craftree Engine
 
-<img src="assets/luans-labs.png" width="300" alt="Luan Labs">
+<img src="./luans-labs.png" width="300" alt="Luan Labs">
 
-<br>
+<br><br>
 
 ![Status](https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge)
 ![Version](https://img.shields.io/badge/Version-5.7-blue?style=for-the-badge)
-![Engine](https://img.shields.io/badge/Engine-Luanti--Based-purple?style=for-the-badge)
-![Platform](https://img.shields.io/badge/Platform-PC-lightgrey?style=for-the-badge)
+![Engine](https://img.shields.io/badge/Engine-Craftree%20Engine-purple?style=for-the-badge)
+![Studio](https://img.shields.io/badge/Studio-Luan%20Labs-black?style=for-the-badge)
 
 </div>
 
@@ -23,52 +23,135 @@ The official development profile for Craftree — a voxel game by Luan Labs.
 
 # 🌳 About Craftree
 
-**Craftree** is a voxel-based game project developed by **Luan Labs**.
+**Craftree** is a voxel-based game powered by the **Craftree Engine** and developed by **Luan Labs**.
 
-The project started as an experimental game built on top of the **Luanti** engine and has gradually evolved through custom branding, interface changes, gameplay experiments, networking work, optimization, and distribution systems.
+Craftree started as an experimental voxel game project and has grown through custom engine development, gameplay experiments, networking work, performance improvements, interface redesigns, branding, and standalone distribution.
 
-The long-term goal is to build a more independent **Craftree ecosystem and engine**, while continuing to develop the project around the existing technology base.
+The long-term goal is to develop Craftree into a more independent game and engine ecosystem.
 
 > ⚠️ **Craftree is currently in development and has not been publicly released.**
 
-This GitHub repository is a **public project profile**.
+This repository is a **public project profile**.
 
-The Craftree source code and private development files are **not publicly released here**.
+The Craftree source code and private development files are **not publicly released in this repository**.
 
 ---
 
-# 🎮 Craftree
+# ⚙️ Craftree Engine
 
-Craftree is focused on:
+The **Craftree Engine** is the technology behind Craftree.
 
-- 🌍 Procedural voxel worlds
-- 🧱 Building and destruction
-- 🌲 Exploration
+Development focuses on creating a flexible voxel engine capable of supporting:
+
+- 🌍 Procedural worlds
+- 🧱 Block-based environments
+- 🎮 Player movement
 - 👥 Multiplayer
-- ⚙️ Performance
-- 🔧 Custom engine development
-- 🎨 Custom UI and branding
-- 🔒 Networking and security
+- 🌐 Networking
+- 🔧 Modding and customization
+- 🖥️ Desktop platforms
+- 📱 Mobile platforms
+- ⚡ Performance optimization
+- 🔒 Security
 - 📦 Standalone distribution
 
+Craftree Engine is being developed with a long-term goal of becoming increasingly independent from its original technology base.
+
 ---
 
-# 🛠️ Development
+# 💻 Platforms & Devices
 
-Craftree's development has gone through several experimental stages.
+Craftree Engine is being developed with cross-platform support in mind.
 
-The following archive represents the project's **internal development lore / experimental milestones**.
+The underlying technology supports a wide range of platforms, and Craftree development is working toward bringing the project to multiple devices.
+
+| Platform | Device type | Status |
+|---|---|---|
+| 🪟 Windows | PC / Laptop | 🟢 Development |
+| 🐧 Linux | PC / Laptop | 🟡 Planned / Development |
+| 🍎 macOS | Mac / MacBook | 🟡 Planned |
+| 🤖 Android | Phones / Tablets | 🟡 Planned |
+| 🐧📱 Linux Phones | Linux mobile devices | 🟡 Experimental |
+| 🍎📱 iOS | iPhone / iPad | 🔴 Not currently supported |
+
+### Android architectures
+
+The engine technology supports:
+
+- ARMv7
+- ARM64 / AArch64
+- x86
+- x86_64
+
+Android support is intended for phones and tablets.
+
+> Platform availability for **Craftree itself depends on the specific Craftree Engine build and release**.
+
+---
+
+# 🎮 Game Features
+
+Craftree is being developed around a voxel sandbox experience.
+
+### 🌍 World
+
+- Procedurally generated terrain
+- Large voxel environments
+- Underground areas
+- Caves
+- Landscapes
+- Structures
+- Exploration
+
+### 🧱 Building
+
+- Place blocks
+- Break blocks
+- Build structures
+- Modify terrain
+- Create custom environments
+
+### 👤 Player
+
+- First-person gameplay
+- Player movement
+- Inventory systems
+- Interaction
+- Multiplayer player synchronization
+
+### 🌐 Multiplayer
+
+Craftree Engine is designed around multiplayer support.
+
+Development includes:
+
+- Server connections
+- Player synchronization
+- Network handling
+- Server configuration
+- Connection validation
+- Multiplayer stability
+
+---
+
+# 🛠️ Development History
+
+The following is an **internal development archive / project lore** documenting experimental stages of Craftree.
+
+---
 
 ## v1.0 — First Prototype
 
-The original prototype was created to test the basic voxel world.
+The first prototype was created to test the basic voxel world.
 
-Early problems included:
+Early bugs included:
 
 - `BUG-0001` — Player spawned inside terrain
-- `BUG-0007` — Floating terrain generation
+- `BUG-0007` — Floating terrain
 - `BUG-0013` — Block visual desynchronization
-- `BUG-0019` — Game refused to close correctly
+- `BUG-0019` — Game refused to close
+
+The prototype established the foundation for later development.
 
 ---
 
@@ -76,10 +159,10 @@ Early problems included:
 
 World generation was heavily experimented with.
 
-Some experimental terrain algorithms produced extremely strange results, including:
+Some experimental algorithms produced:
 
-- Massive underground areas
 - Floating islands
+- Massive underground areas
 - Broken terrain borders
 - Unexpected terrain gaps
 
@@ -91,13 +174,13 @@ The generation system was reworked.
 
 Multiplayer development began.
 
-One of the most memorable internal bugs was:
+One of the most memorable internal bugs:
 
 ### `BUG-0142` — Ghost Player 👻
 
-Players could occasionally remain visible after disconnecting.
+A disconnected player could occasionally remain visible to other players.
 
-The player synchronization system was later redesigned.
+The synchronization system was later redesigned.
 
 ---
 
@@ -107,7 +190,7 @@ More advanced entity systems were introduced.
 
 ### `BUG-0204` — Infinite Walk
 
-An experimental movement bug allowed a player to continue moving under certain conditions without properly stopping.
+An experimental movement issue allowed the player to continue moving under certain conditions without properly stopping.
 
 Fixed during movement-system revisions.
 
@@ -115,14 +198,14 @@ Fixed during movement-system revisions.
 
 # 🔥 v3.0 — Major Rewrite
 
-The project entered a larger development phase.
+The project entered a major development phase.
 
-Major systems were reorganized, including:
+Several systems were reorganized:
 
 - World management
 - Entity handling
-- Networking
 - Rendering
+- Networking
 - User interface
 - Configuration
 - Game initialization
@@ -139,10 +222,10 @@ Development focused on:
 
 - Connection handling
 - Multiplayer synchronization
-- Server configuration
 - Player limits
-- Security hardening
+- Server configuration
 - Network stability
+- Security hardening
 
 ---
 
@@ -156,7 +239,7 @@ The configuration was disabled while the player-management system was redesigned
 
 ## v4.7 — Hardening
 
-Additional work was done on:
+Additional work focused on:
 
 - Server validation
 - Connection handling
@@ -167,11 +250,11 @@ Additional work was done on:
 
 # 🧹 v5.0 — Cleanup
 
-The project entered a major cleanup phase.
+Craftree entered a major cleanup phase.
 
-Unused systems were removed and several parts of the project were reorganized.
+Unused systems were removed and multiple parts of the project were reorganized.
 
-Development became more focused on creating a cleaner Craftree experience rather than simply adding experimental features.
+The focus shifted toward creating a cleaner and more maintainable engine.
 
 ---
 
@@ -181,39 +264,40 @@ An experimental build contained several features that were never intended for pu
 
 The build was archived internally.
 
-Some of the features were later redesigned or removed.
+Some experimental systems were later redesigned or removed.
 
 ---
 
 # 🎨 v5.5 — Branding & Interface
 
-Craftree began moving toward its own visual identity.
+Craftree began developing its own visual identity.
 
 Work included:
 
 - Custom Craftree branding
-- Custom Luan Labs branding
-- UI modifications
-- Project naming
+- Luan Labs branding
+- Custom UI
+- Application identity
+- Engine presentation
 - Distribution changes
-- Removal/replacement of engine-specific presentation
-- Custom application identity
+- Project-specific interfaces
 
 ---
 
 # 🚀 v5.7 — Current Development
 
-Current development focuses on making Craftree feel increasingly like its own project.
+Current development focuses on making Craftree feel increasingly like its own engine and game ecosystem.
 
-Areas being worked on include:
+Current areas include:
 
-- ⚙️ Engine modifications
-- 🌍 World systems
+- ⚙️ Craftree Engine development
+- 🌍 World generation
 - 🎮 Gameplay
 - 🌐 Multiplayer
-- 🖥️ Interface
+- 🖥️ UI
 - 📦 Distribution
 - 🔒 Security
+- ⚡ Optimization
 - 🧹 Code cleanup
 - 🎨 Branding
 
@@ -221,17 +305,15 @@ Areas being worked on include:
 
 # 🐛 Internal Bug Archive
 
-Some experimental bugs from development:
-
 | ID | Description | Status |
 |---|---|---|
-| BUG-0001 | Spawned inside terrain | Fixed |
-| BUG-0007 | Floating terrain | Fixed |
-| BUG-0013 | Block visual desync | Fixed |
-| BUG-0019 | Game refused to close | Fixed |
-| BUG-0142 | Ghost Player | Fixed |
-| BUG-0204 | Infinite Walk | Fixed |
-| BUG-0666 | Classified 👀 | ??? |
+| BUG-0001 | Spawned inside terrain | ✅ Fixed |
+| BUG-0007 | Floating terrain | ✅ Fixed |
+| BUG-0013 | Block visual desync | ✅ Fixed |
+| BUG-0019 | Game refused to close | ✅ Fixed |
+| BUG-0142 | Ghost Player | ✅ Fixed |
+| BUG-0204 | Infinite Walk | ✅ Fixed |
+| BUG-0666 | Classified 👀 | ❓ |
 
 > Some entries are intentionally kept as internal development lore.
 
@@ -239,13 +321,14 @@ Some experimental bugs from development:
 
 # 🗺️ Roadmap
 
-### Current
+## Current
 
 - [x] Craftree branding
 - [x] Luan Labs branding
 - [x] Custom project identity
+- [x] Craftree Engine branding
 - [x] Initial engine modifications
-- [x] Standalone build
+- [x] Standalone Windows build
 - [x] Installer experiments
 - [ ] More gameplay systems
 - [ ] Multiplayer improvements
@@ -253,22 +336,25 @@ Some experimental bugs from development:
 - [ ] More optimization
 - [ ] Public testing
 
-### Future
+## Future
 
-- [ ] Larger Craftree ecosystem
-- [ ] Dedicated Craftree services
+- [ ] Expanded Craftree Engine
 - [ ] More independent engine systems
+- [ ] Android builds
+- [ ] Linux builds
+- [ ] macOS builds
 - [ ] Modding ecosystem
-- [ ] Public release
+- [ ] Dedicated Craftree services
 - [ ] Community infrastructure
+- [ ] Public release
 
 ---
 
 # ⭐ Rate Craftree
 
-Want to rate the project?
+Want to rate Craftree?
 
-Click one of the buttons below.
+Click a rating below and submit your feedback through GitHub Issues.
 
 ### ⭐⭐⭐⭐⭐
 
@@ -290,21 +376,15 @@ Click one of the buttons below.
 
 [![1 Star](https://img.shields.io/badge/⭐-1%2F5-red?style=for-the-badge)](../../issues/new?title=⭐%20Craftree%20Rating%20-%201%2F5&body=Rating:%201%2F5%0A%0AFeedback:%20)
 
-> Clicking a rating opens a GitHub Issue with the rating already filled in, so people can leave feedback.
-
 ---
 
 # 💬 Community & Support
 
 ### SLBR • Uncopylocked Discord
 
-Community and support:
-
 https://discord.gg/uncopylocks
 
 ### Nemea Hosting
-
-Infrastructure and hosting:
 
 https://nemeahosting.com
 
@@ -314,22 +394,30 @@ https://nemeahosting.com
 
 **Luan Labs** is the studio behind Craftree.
 
-Our goal is to experiment with games, technology, engines, and online infrastructure while building projects with their own identity.
-
-<img src="assets/luans-labs.png" width="250" alt="Luan Labs">
-
----
+The studio focuses on games, technology, engine development, experimentation, and online infrastructure.
 
 <div align="center">
 
-### 🌳 Craftree
+<img src="./luans-labs.png" width="250" alt="Luan Labs">
 
-**Build. Explore. Create.**
+<br><br>
 
-Made by **Luan Labs**
+**Luan Labs**
 
-<br>
+</div>
 
-<img src="assets/craftree.png" width="90" alt="Craftree">
+---
+
+# 🌳 Craftree
+
+<div align="center">
+
+<img src="./craftree.png" width="100" alt="Craftree">
+
+### Build. Explore. Create.
+
+**Powered by the Craftree Engine.**
+
+**Made by Luan Labs.**
 
 </div>
